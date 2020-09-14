@@ -3,6 +3,9 @@ from pprint import pprint
 import json
 import argparse
 
+import sys
+sys.path.append("/home/peter/PycharProjects/stock-trading-ml")
+
 
 def save_dataset(symbol, time_window):
     credentials = json.load(open('creds.json', 'r'))
